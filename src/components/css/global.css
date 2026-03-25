@@ -26,8 +26,7 @@ html,
 body {
     font-family: "Andada Pro", serif;
     background: var(--white);
-    width: 100%;
-    height: 100%;
+    max-width: 100vw;
     overflow-x: hidden;
     overflow-y: auto;
     color: var(--black);
@@ -39,6 +38,45 @@ body {
 
 .main_wrapper {
     width: 100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: dashed 1px #BFBDBA ;
+}
+
+.footer_texts {
+    background: hsla(0,0%,100%,.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    font-family: "mono45-headline", monospace;
+}
+
+.footer_texts p {
+    font-size: .8rem
+}
+
+@media(min-width: 768px) {
+    .footer_texts {
+        text-align:unset;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: calc(300px + 1.5rem);
+        margin-right: 1.5rem;
+        padding: .5rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    .footer_texts {
+        margin-left:calc(450px + 2rem);
+        margin-right: 2rem;
+    }
 }
 
 @media (min-width: 768px) {

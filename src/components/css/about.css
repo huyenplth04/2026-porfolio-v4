@@ -5,7 +5,7 @@
 
 @media(min-width: 768px) {
     .aboutpage_wrapper {
-        padding: 1.5rem;
+        padding: 1rem;
         overflow-y: scroll;
         overflow-x: hidden;
         height: 100vh;
@@ -14,7 +14,7 @@
 
 @media(min-width: 1536px) {
     .aboutpage_wrapper {
-        padding: 2rem;
+        padding: 1rem;
     }
 }
 
@@ -459,13 +459,13 @@
 }
 
 .sidebar-about_description {
-    position: relative;
+    /* position: relative; */
     left: -50px;
     /* top: 500px; */
     background-color:#FA3701;
     color: #fff;
     padding: 0 .25rem;
-    transform: rotate(5deg)
+    transform: rotate(15deg)
 }
 
 @media(min-width: 768px) {

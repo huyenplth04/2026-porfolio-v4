@@ -16,6 +16,7 @@
     --grey: #BFBDBA;
     --orange: #FA3701;
     --easing: cubic-bezier(0.16, 1, 0.3, 1);
+    --blue: #374589;
     font-family: "mono45-headline", monospace;
     font-family: "Andada Pro", serif;
     font-weight: 300 700;
@@ -63,111 +64,111 @@ h1 {
 
 @media(min-width: 768px) {
     h1 {
-        font-size:2.1rem
+        font-size:1.8rem;
     }
 }
 
 @media(min-width: 1024px) {
     h1 {
-        font-size:2.5rem
+        font-size:2.5rem;
     }
 }
 
 @media(min-width: 1536px) {
     h1 {
-        font-size:2.6rem
+        font-size:2.6rem;
     }
 }
 
 h2 {
     font-size: 1.5rem;
-    font-weight: 600
+    font-weight: 600;
 }
 
 @media(min-width: 768px) {
     h2 {
-        font-size:1.5rem
+        font-size:1.5rem;
     }
 }
 
 @media(min-width: 1024px) {
     h2 {
-        font-size:1.8rem
+        font-size:1.8rem;
     }
 }
 
 @media(min-width: 1536px) {
     h2 {
-        font-size:2rem
+        font-size:2rem;
     }
 }
 
 h3 {
     font-size: 2rem;
-    font-weight: 600
+    font-weight: 600;
 }
 
 @media(min-width: 768px) {
     h3 {
-        font-size:1.2rem
+        font-size:1.2rem;
     }
 }
 
 @media(min-width: 1024px) {
     h3 {
-        font-size:1.2rem
+        font-size:1.2rem;
     }
 }
 
 @media(min-width: 1536px) {
     h3 {
-        font-size:1.75rem
+        font-size:1.75rem;
     }
 }
 
 h4 {
-    font-size: 1.1rem
+    font-size: 1.1rem;
 }
 
 @media(min-width: 768px) {
     h4 {
-        font-size:1rem
+        font-size:1rem;
     }
 }
 
 @media(min-width: 1024px) {
     h4 {
-        font-size:1rem
+        font-size:1rem;
     }
 }
 
 @media(min-width: 1536px) {
     h4 {
-        font-size:1.2rem
+        font-size:1.2rem;
     }
 }
 
 p {
     font-size: .9rem;
     font-weight: 300;
-    line-height: 1.4
+    line-height: 1.4;
 }
 
 @media(min-width: 768px) {
     p {
-        font-size:1rem
+        font-size:1rem;
     }
 }
 
 @media(min-width: 1024px) {
     p {
-        font-size:1.2rem
+        font-size:1.2rem;
     }
 }
 
 @media(min-width: 1536px) {
     p {
-        font-size:1.2rem
+        font-size:1.2rem;
     }
 }
 
@@ -208,7 +209,9 @@ footer {
 }
 
 .footer_texts p {
-    font-size: .8rem
+    font-size: .8rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 @media(min-width: 768px) {
@@ -217,16 +220,16 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-left: calc(300px + 1.5rem);
-        margin-right: 1.5rem;
-        padding: .5rem;
+        padding: .2rem;
+        /* margin-left: calc(300px + 1.5rem); */
+        /* margin-right: 1.5rem; */
+        /* padding: .5rem; */
     }
 }
 
 @media(min-width: 1024px) {
     .footer_texts {
-        margin-left:calc(450px + 2rem);
-        margin-right: 2rem;
+        margin-left:calc(450px);
     }
 }
 
@@ -305,7 +308,6 @@ footer {
 /* sidebar content wrapper */
 .sidebar-content_wrapper {
     padding: 1rem;
-    /* border: dashed 1px #BFBDBA; */
     min-height: 70vh;
     display: flex;
     justify-content: space-evenly;
@@ -355,9 +357,6 @@ footer {
     }
 }
 
-/* .sidebar-information_container {
-    margin-top: 3rem;
-}  */
 
 /* sidebar content_wrapper */
 .sidebar-content_wrapper {
@@ -409,6 +408,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* padding: 2rem; */
 }
 
 .header-navlink, .header-navlink_about {
@@ -419,7 +419,7 @@ footer {
 
 
 @media (min-width: 768px) {
-    .header-nav_navlink, .header-navlink_about {
+    .header-nav_navlink, .header-navlink_about{
         display: block;
     }
 }
@@ -428,13 +428,13 @@ footer {
 .header-navlink_item {
     flex-basis: 50%;
     text-align: center;
-    padding: .5rem 0;
+    /* padding: .5rem 0; */
     
 }
 
 .header-navlink:nth-child(2),.header-navlink_about:nth-child(2) {
-    border-left: 1px solid #BFBDBA;
-    border-right: 1px solid #BFBDBA;
+    border-left: dashed 1px solid #BFBDBA;
+    border-right: dashed 1px solid #BFBDBA;
 }
 
 .header-navlink:hover,.header-navlink_about:hover {
@@ -465,9 +465,9 @@ footer {
 
 @media (min-width: 768px) {
     .header-navlink, .header-navlink_about {
-        flex-basis: unset;
-        text-align: unset;
-        padding: unset;
+        /* flex-basis: unset; */
+        /* text-align: unset; */
+        /* padding: unset; */
         overflow: hidden;
         margin-bottom: .8rem;
         font: 2rem;
@@ -602,4 +602,3 @@ footer {
         width: 22vw;
     }
 }
-

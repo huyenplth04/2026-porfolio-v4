@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../components/css/global.css" />
     <link rel="stylesheet" href="../components/css/home.css">
     <link rel="stylesheet" href="../components/css/about.css">
-
 </head>
 
 <body>
@@ -17,7 +16,7 @@
         <div class="sidebar_container">
             <div class="sidebar-content_wrapper">
                 <div class="sidebar-content_container">
-                    <a class="sidebar_logo" href="">
+                    <a class="homepage_sidebar-logo" href="">
                         <img src="../data/Profile/huyen-logo.svg" alt="Logo of Huyen Pham">
                     </a>
                 </div>
@@ -28,7 +27,7 @@
                 <div class="sidebar-details_wrapper">
                     <div class="sidebar-information_container">
                         <h3>Contact Me</h3>
-                        <img src="" alt="arrow icon">
+                        <span class="sidebar-information_arrow">→</span>
                         <div class="sidebar-information-items_container">
                             <a target="#" href="mailto:huyenplth29@gmail.com">Email</a>
                             <a target="#" href="pdf">Resume</a>
@@ -36,7 +35,7 @@
                     </div>
                     <div class="sidebar-information_container">
                         <h3>Follow Me</h3>
-                        <img src="" alt="arrow icon">
+                        <span class="sidebar-information_arrow">→</span>
                         <div class="sidebar-information-items_container">
                             <a target="#" href="https://www.linkedin.com/in/huyen-pham-124135380/">LinkedIn</a>
                             <a target="#" href="https://www.instagram.com/huyenphm02/">Instagram</a>
@@ -44,29 +43,33 @@
                     </div>
                 </div>
             </div>
-            <div class="header_container">
-                <ul class="header-navlink_about">
-                    <li class="header-navlink_item">
-                        <a href="#about">Hello</a>
-                    </li>
-                    <li class="header-navlink_item">
-                        <a href="#tldr">TLDR</a>
-                    </li>
-                    <!-- <li class="header-navlink_item">
-                        <a href="#contactform">Contact Form</a>
-                    </li> -->
-                </ul>
-            </div>
+            <header>
+                <div class="header_container">
+                    <nav class="header-nav_container">
+                        <ul class="header-navlink">
+                            <li class="header-navlink_item">
+                                <a href="#hello">Hello</a>
+                            </li>
+                            <li class="header-navlink_item">
+                                <a href="#tldr">TLDR</a>
+                            </li>
+                            <!-- <li class="header-navlink_item">
+                                <a href="#contactform">Contact Form</a>
+                            </li> -->
+                        </ul>
+                    </nav>
+                </div>
+            </header>
         </div>
         <div class="main_wrapper">
             <div class="subnav-wrapper">
-                <div class="subnav-container">
-                    <a href="./index.html">
-                        <div class="subnav_button">
+                <ul class="subnav-container">
+                    <li class="subnav_button">
+                        <a href="./index.html">
                             <button class="subnav_button-item">Home</button>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="aboutpage_wrapper">
                 <section id="hello" class="aboutpage_introduction">

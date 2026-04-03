@@ -219,6 +219,7 @@
     .main_wrapper {
         top: 1rem;
         position: relative;
+        /* padding: 1rem; */
     }
 
     .main_wrapper .subnav-wrapper {

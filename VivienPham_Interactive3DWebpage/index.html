@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Model Info Layout</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.12.74/build/spline-viewer.js"
+    ></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <p class="page-label">Start</p>
+
+      <section class="viewer-layout info-closed" id="viewerLayout">
+        <button
+          class="more-info-tab"
+          id="openInfoButton"
+          type="button"
+          aria-controls="infoPanel"
+          aria-expanded="false"
+        >
+          MORE INFO
+        </button>
+
+        <aside class="info-panel" id="infoPanel" aria-hidden="true">
+          <button class="close-panel" id="closeInfoButton" type="button" aria-label="Turn off information panel">
+            X
+          </button>
+
+          <div class="info-content">
+            <h1>YOUR TITLE</h1>
+            <p>
+              Add your description here later. This section is only the structure for your
+              project, so you can replace this text with your own content anytime.
+            </p>
+          </div>
+        </aside>
+
+        <div class="model-stage">
+          <spline-viewer
+            class="cat-model"
+            url="https://prod.spline.design/a1WC9ER7n85fBamD/scene.splinecode"
+          ></spline-viewer>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const viewerLayout = document.getElementById("viewerLayout");
+      const openInfoButton = document.getElementById("openInfoButton");
+      const closeInfoButton = document.getElementById("closeInfoButton");
+      const infoPanel = document.getElementById("infoPanel");
+
+      function openPanel() {
+        viewerLayout.classList.remove("info-closed");
+        viewerLayout.classList.add("info-open");
+        openInfoButton.setAttribute("aria-expanded", "true");
+        infoPanel.setAttribute("aria-hidden", "false");
+      }
+
+      function closePanel() {
+        viewerLayout.classList.remove("info-open");
+        viewerLayout.classList.add("info-closed");
+        openInfoButton.setAttribute("aria-expanded", "false");
+        infoPanel.setAttribute("aria-hidden", "true");
+      }
+
+      openInfoButton.addEventListener("click", openPanel);
+      closeInfoButton.addEventListener("click", closePanel);
+    </script>
+  </body>
+</html>

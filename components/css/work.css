@@ -4,6 +4,14 @@
     margin-bottom: 0;
 }
 
+.mocmug-sidebar {
+    background-color:#2b4e3f;   
+}
+
+.mocmug-page .work-content_text-container h3 {
+    color: #2b4e3f;
+    -webkit-text-stroke: #2b4e3f 2px;
+}
 .sidebar-work_container {
     margin-bottom: 1.5rem;
     display: flex;
@@ -128,12 +136,13 @@
     margin-bottom: 1.5rem;
 }
 
-.work-content_intro h3,.work-content_text-container h3 {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+.work-content_text-container h3 {
+    margin-bottom: .5rem;
+    font-weight: 500;
+    -webkit-text-stroke: var(--blue) 2px;
+    margin-top: .5rem;
     color: #939393;
     font-family: "mono45-headline", monospace;
-    font-weight: 500;
     color: var(--blue);
 }
 
@@ -214,8 +223,6 @@
     width: 100%;
     height: auto;
     max-width: 1300px;
-    /* margin-bottom: .5rem; */
-    /* border-radius: 2px; */
 }
 
 .batchco-gallery-section .work-content_img {
@@ -246,9 +253,7 @@
 
 @media(min-width: 768px) {
     .main_wrapper {
-        top: 1rem;
         position: relative;
-        padding: 1rem;
     }
 
     .main_wrapper .subnav-wrapper {
@@ -258,7 +263,7 @@
         bottom: auto;
         left: auto;
         width: fit-content;
-        margin: 1rem auto 0;
+        margin: 3rem auto;
         z-index: 100;
     }
 
@@ -272,5 +277,11 @@
         height: auto;
         overflow: visible;
         padding-top: 1rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    .main_wrapper .subnav-wrapper {
+        margin: 2rem auto 0;
     }
 }

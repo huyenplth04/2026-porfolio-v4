@@ -1,35 +1,3 @@
-.subnav-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    border: 1px solid #a4a4a4;
-    border-radius: 30px;
-    background: hsla(0,0%,100%,.2);
-    -webkit-backdrop-filter: blur(30px);
-    backdrop-filter: blur(30px);
-}
-
-@media (min-width: 768px) {
-    .subnav-wrapper {
-        width: fit-content;
-        position: sticky;
-        right: auto;
-        bottom: auto;
-        left: auto;
-        font-family: "mono45-headline", monospace;
-    }
-
-    .main_wrapper .subnav-container {
-        width: unset;
-    }
-
-    .main_wrapper .subnav-container .subnav_button,
-    .main_wrapper .subnav-container .subnav_button-item {
-        min-height: 2rem;
-    }
-}
-
 @media (min-width: 768px) {
     .main_wrapper {
         height: 100vh;
@@ -127,7 +95,7 @@
         column-gap: 1rem;
         row-gap: 1.5rem;
         align-items: start;
-        padding: 1rem;
+        /* padding: 1rem; */
     }
 
     .sidebar-content_container {

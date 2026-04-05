@@ -1,6 +1,7 @@
 .homepage_wrapper {
     width: 100%;
     padding: 1rem;
+    margin-top: 2rem;
     margin-bottom: 7rem;
 }
 
@@ -25,12 +26,7 @@
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-column-gap: .5rem;
-    /* column-gap: .5rem; */
-    /* grid-gap: .5rem; */
-    /* gap: .5rem; */
     width: 100%;
-    /* background-color: antiquewhite; */
-    /* padding: .7rem; */
 }
 
 .article-image_container:hover {

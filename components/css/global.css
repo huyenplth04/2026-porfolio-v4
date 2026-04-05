@@ -104,7 +104,7 @@ h2 {
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
@@ -465,9 +465,6 @@ footer {
 
 @media (min-width: 768px) {
     .header-navlink, .header-navlink_about {
-        /* flex-basis: unset; */
-        /* text-align: unset; */
-        /* padding: unset; */
         overflow: hidden;
         margin-bottom: .8rem;
         font: 2rem;
@@ -491,6 +488,20 @@ footer {
 }
 
 /* SubNav */
+
+.subnav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid #a4a4a4;
+    border-radius: 30px;
+    background: hsla(0,0%,100%,.2);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    min-height: 2rem;
+}
+
 .subnav-wrapper {
     width: -moz-fit-content;
     width: fit-content;
@@ -508,11 +519,15 @@ footer {
 @media(min-width: 768px) {
     .subnav-wrapper {
         width: 50%;
-        position: absolute;
         top: unset;
         right: 0;
         bottom: 3rem;
         left: 0;
+        position: sticky;
+    }
+    .subnav-container .subnav_button,
+    .subnav-container .subnav_button-item {
+        min-height: 2rem;
     }
 }
 
@@ -543,7 +558,6 @@ footer {
 
 .subnav_button {
     width: 23vw;
-    flex-basis: 33.33%;
     border-radius: 30px;
     height: 2rem;
     font-weight: 500;
@@ -572,7 +586,6 @@ footer {
     transition: all .2s ease-in-out;
     border-radius: 30px;
     background: transparent;
-    height: 2rem;
 }
 
 @media(min-width: 768px) {
@@ -583,12 +596,7 @@ footer {
     }
 }
 
-.subnav_button-item.active {
-    color: #fff;
-    background: #355dff;
-    transform: skew(7deg, -7deg)
-}
-
+.subnav_button-item.active,
 .subnav_button-item:hover {
     color: aliceblue;
     background: #FA3701;
@@ -598,7 +606,8 @@ footer {
 
 
 @media(min-width: 768px) {
+    .subnav_button-item.active,
     .subnav_button-item:hover {
-        width: 22vw;
+        width: 8vw;
     }
 }

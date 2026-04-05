@@ -67,18 +67,18 @@
             <div class="subnav-wrapper">
                 <ul class="subnav-container">
                     <li class="subnav_button">
-                        <button class="subnav_button-item">All</button>
+                        <button class="subnav_button-item active" data-filter="all" aria-pressed="true">All</button>
                     </li>
                     <li class="subnav_button">
-                        <button class="subnav_button-item">UX/UI</button>
+                        <button class="subnav_button-item" data-filter="uxui" aria-pressed="false">UX/UI</button>
                     </li>
                     <li class="subnav_button">
-                        <button class="subnav_button-item">Branding</button>
+                        <button class="subnav_button-item" data-filter="branding" aria-pressed="false">Branding</button>
                     </li>
                 </ul>
             </div>
             <div id="work" class="homepage_wrapper">
-                <article class="article_container">
+                <article class="article_container" data-category="branding">
                     <a class="article-image_container" href="./works/batchco.html">
                         <img class="article-image" src="./data/batchco/1-08.png" alt="">
                         <img class="article-image" src="./data/batchco/1-01.svg" alt="">
@@ -99,7 +99,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="article_container">
+                <article class="article_container" data-category="uxui">
                     <a class="article-image_container" href="./works/revive.html">
                         <img class="article-image" src="./data/revive/revive-leftright.png" alt="">
                         <img class="article-image" src="./data/revive/revive-middle.png" alt="">
@@ -120,7 +120,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="article_container">
+                <article class="article_container" data-category="branding">
                     <a class="article-image_container" href="./works/mocmug.html">
                         <img class="article-image" src="./data/mocmug/2-06-cover.svg" alt="">
                         <img class="article-image" src="./data/mocmug/2-01.svg" alt="">
@@ -141,7 +141,7 @@
                         </div>
                     </div>
                 </article>
-                <article class="article_container">
+                <article class="article_container" data-category="uxui">
                     <a class="article-image_container" href="./works/webuildcv.html">
                         <img class="article-image" src="./data/webuildcv/cv-leftright.png" alt="">
                         <img class="article-image" src="./data/webuildcv/cv-middle.png" alt="">

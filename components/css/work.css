@@ -139,7 +139,7 @@
 .work-content_text-container h3 {
     margin-bottom: .5rem;
     font-weight: 500;
-    -webkit-text-stroke: var(--blue) 2px;
+    -webkit-text-stroke: var(--blue) 1px;
     margin-top: .5rem;
     color: #939393;
     font-family: "mono45-headline", monospace;

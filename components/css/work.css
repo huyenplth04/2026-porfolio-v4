@@ -8,10 +8,25 @@
     background-color:#2b4e3f;   
 }
 
+.revive-sidebar {
+    background-color: #5f8f63;
+}
+
 .mocmug-page .work-content_text-container h3 {
     color: #2b4e3f;
-    -webkit-text-stroke: #2b4e3f 2px;
+    -webkit-text-stroke: #2b4e3f 1px;
 }
+
+.mocmug-page .sidebar-work_type {
+    color: #5a9e77;
+}
+
+.revive-page .sidebar-work_type,
+.revive-page .work-content_text-container h3 {
+    color: #5f8f63;
+    -webkit-text-stroke: #5f8f63 1px;
+}
+
 .sidebar-work_container {
     margin-bottom: 1.5rem;
     display: flex;
@@ -98,7 +113,6 @@
 
 .work-content_section {
     margin-bottom: 3rem;
-    border-bottom: dashed 1px #BFBDBA;
 }
 
 @media(min-width: 768px) {
@@ -219,10 +233,14 @@
     }
 }
 
-.work-content_img,.WorkContent_video__pAyj5 {
+.work-content_img {
     width: 100%;
     height: auto;
     max-width: 1300px;
+}
+
+.work-content_video {
+    padding: 1rem;
 }
 
 .batchco-gallery-section .work-content_img {

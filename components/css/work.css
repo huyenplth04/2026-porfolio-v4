@@ -239,8 +239,18 @@
     max-width: 1300px;
 }
 
-.work-content_video {
+.work-content_video-player {
+    width: 100%;
+    max-width: 1300px;
     padding: 1rem;
+}
+
+.work-content_video {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    cursor: pointer;
 }
 
 .batchco-gallery-section .work-content_img {

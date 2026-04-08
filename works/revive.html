@@ -35,10 +35,10 @@
                         </div>
                     </div>
                     <div class="sidebar-work-details">
-                        <!-- <h3>View</h3>
+                        <h3>View</h3>
                         <div>
-                            <a href="">Prototype</a>
-                        </div> -->
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/8Q8xFZgjMA6aPL8btMXOTv/UX-UI-Strategy-Project?node-id=410-849&viewport=269%2C-914%2C0.23&t=oYZdRz0PA9Mhicc0-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=410%3A849&page-id=129%3A50">Prototype</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -104,7 +104,9 @@
                         <img class="work-content_img" src="../data/revive/revive-08.svg" alt="">
                         <img class="work-content_img" src="../data/revive/revive-09.svg" alt="">
                         <img class="work-content_img" src="../data/revive/revive-10.svg" alt="">
-                        <video class="work-content_video" src="../data/revive/revive-video.mov"></video>
+                        <div class="work-content_video-player">
+                            <video class="work-content_video" src="../data/revive/revive-video.mov" playsinline preload="metadata"></video>
+                        </div>
                     </section>
                 </div>
             </div>
@@ -120,6 +122,23 @@
             <p>&copy huyen pham 2026</p>
         </div>
     </footer>
+    <script>
+        const videoPlayer = document.querySelector('.work-content_video-player');
+
+        if (videoPlayer) {
+            const video = videoPlayer.querySelector('.work-content_video');
+
+            const toggleVideo = () => {
+                if (video.paused) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            };
+
+            video.addEventListener('click', toggleVideo);
+        }
+    </script>
 </body>
 
 </html>
